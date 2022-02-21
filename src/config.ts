@@ -1,3 +1,3 @@
-export const config = {
+export default {
   PORT: 3000,
 };

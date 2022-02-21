@@ -1,8 +1,11 @@
-import express, { Application, Request, Response, NextFunction } from 'express';
-import { config } from './config';
+import express, {
+  Application, Request, Response, NextFunction,
+} from 'express';
+import config from './config';
 
 const app: Application = express();
 
+// eslint-disable-next-line no-unused-vars
 app.use('/', (req: Request, res: Response, next: NextFunction) => {
   res.status(200).send({ data: 'Response from server' });
 });

@@ -19,10 +19,6 @@ const database = [
   },
 ];
 
-const search = (title: string) => {
-  console.log('searching ', title);
-
-  return database.filter((itm) => itm.title.includes(title));
-};
+const search = (title: string) => database.filter((itm) => itm.title.includes(title));
 
 export default search;
